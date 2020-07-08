@@ -57,7 +57,7 @@ class App extends Component {
 
   render()
   {
-    let apiKey = 'AIzaSyAz_v6QPOTHhHJvlsBw6NF6NShofW9Qsj8';
+    let apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
     return (
       <div className="App">
         {/* <CurrentDay latitude={this.state.latitude} longitude={this.state.longitude} /> */}
@@ -65,8 +65,9 @@ class App extends Component {
         <p>Longitude: {this.state.longitude}</p>
         <p>Latitude: {this.state.latitude}</p>
         {
-          this.state.latitude && this.state.longitude ? <img src={`https://maps.googleapis.com/maps/api/staticmap?center=${this.state.latitude},${this.state.longitude}&zoom=14&size=400x300&sensor=false&markers=color:red%7c${this.state.latitude},${this.state.longitude}&key=${apiKey}`} alt='map' /> :
-          null
+          this.state.latitude && this.state.longitude ? 
+          <img src={`https://maps.googleapis.com/maps/api/staticmap?center=${this.state.latitude},${this.state.longitude}&zoom=14&size=400x300&sensor=false&markers=color:red%7c${this.state.latitude},${this.state.longitude}&key=${apiKey}`} alt='map' />
+  : null
         }
       </div>
     );
