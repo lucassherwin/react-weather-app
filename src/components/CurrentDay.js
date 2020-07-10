@@ -57,20 +57,20 @@ export class CurrentDay extends Component {
                 <p>The Current Weather Is: {this.state.currentWeatherType}</p>
                 <p>currentTempF: {this.state.currentTempF}</p>
                 <p>currentTempC: {this.state.currentTempC}</p>
-        <p>isRaining: {this.state.isRaining ? 'Currently Raining' : 'Not Currently Raining'}</p>
-        <p>seeMoreLink: {this.state.seeMoreLink}</p>
-        <p>tempHighF: {this.state.tempHighF}</p>
-        <p>tempHighC: {this.state.tempHighC}</p>
-        <p>tempLowF: {this.state.tempLowF}</p>
-        <p>tempLowC: {this.state.tempLowC}</p>
-        <p>humidity: {this.state.humidity}</p>
-        <p>uvIndex: {this.state.uvIndex}</p>
-        <p>uvIndexText: {this.state.uvIndexText}</p>
-        <p>windDirection: {this.state.windDirection}</p>   
-        <p>windSpeedMPH: {this.state.windSpeedMPH}</p>
-        <p>windSpeedKMPH: {this.state.windSpeedKMPH}</p>
-        <p>windChillTempF: {this.state.windChillTempF}</p>
-        <p>windChillTempC: {this.state.windChillTempC}</p>
+                <p>isRaining: {this.state.isRaining ? 'Currently Raining' : 'Not Currently Raining'}</p>
+                <p>seeMoreLink: {this.state.seeMoreLink}</p>
+                <p>tempHighF: {this.state.tempHighF}</p>
+                <p>tempHighC: {this.state.tempHighC}</p>
+                <p>tempLowF: {this.state.tempLowF}</p>
+                <p>tempLowC: {this.state.tempLowC}</p>
+                <p>humidity: {this.state.humidity}</p>
+                <p>uvIndex: {this.state.uvIndex}</p>
+                <p>uvIndexText: {this.state.uvIndexText}</p>
+                <p>windDirection: {this.state.windDirection}</p>   
+                <p>windSpeedMPH: {this.state.windSpeedMPH}</p>
+                <p>windSpeedKMPH: {this.state.windSpeedKMPH}</p>
+                <p>windChillTempF: {this.state.windChillTempF}</p>
+                <p>windChillTempC: {this.state.windChillTempC}</p>
             </div>
         )
     }
