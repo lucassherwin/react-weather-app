@@ -26,11 +26,12 @@ export class CurrentDay extends Component {
         fetch(`http://dataservice.accuweather.com/currentconditions/v1/${this.props.cityKey}?apikey=${WEATHERapiKey}&details=true`)
         .then(resp => resp.json())
         .then(data => this.setState({
-        //     currentWeatherType: data[0]['WeatherText'],
-        //     currentTempF: data[0]['Temperature']['Imperial']['Value'],
-        //     currentTempC: data[0]['Temperature']['Metric']['Value'],
-        //     isRaining: data[0]['HasPrecipitation'],
-        //     seeMoreLink: data[0]['Link']
+            currentWeatherType: data[0]['WeatherText'],
+            currentTempF: data[0]['Temperature']['Imperial']['Value'],
+            currentTempC: data[0]['Temperature']['Metric']['Value'],
+            isRaining: data[0]['HasPrecipitation'],
+            seeMoreLink: data[0]['Link'],
+            
         }))
     }
 
